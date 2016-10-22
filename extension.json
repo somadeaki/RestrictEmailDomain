@@ -1,0 +1,23 @@
+{
+	"name": "RestrictEmailDomain",
+	"version": "1",
+	"author": [
+		"Soma Deaki"
+	],
+	"url": "",
+	"descriptionmsg": "restrictemaildomain-desc",
+	"license-name": "Unlicense",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.26.0"
+	},
+	"AutoloadClasses": {
+		"RestrictEmailDomainPreAuthenticationProvider": "RestrictEmailDomain_body.php"
+	},
+	"MessagesDirs": {
+		"RestrictEmailDomain": [
+			"i18n"
+		]
+	},
+	"manifest_version": "1"
+}

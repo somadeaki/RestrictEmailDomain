@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": ["Soma Deaki"]
+	},
+	"restrictemaildomain-desc": "Enables restrictions on email address domains when registering new accounts.",
+	"restrictemaildomain-error": "Your email domain is invalid."
+}
