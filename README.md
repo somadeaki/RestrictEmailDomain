@@ -5,7 +5,7 @@ A MediaWiki extension that allows admins to restrict account creation to specifi
 
 ##1. Download
 
-Download the soure files and put them in the <mediawiki_dir>/extensions/RestrictEmailDomain directory.
+Download the soure files and put them in the `<mediawiki_dir>/extensions/RestrictEmailDomain` directory.
 
 ##2. Configure
 
