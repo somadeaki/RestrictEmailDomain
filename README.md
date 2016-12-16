@@ -17,7 +17,7 @@ Edit LocalSettings.php in your MediaWiki root directory and follow these steps.
 wfLoadExtension('RestrictEmailDomain');
 ```
 
-### 2. Define the list of allowed domains. YOu can either set this variable to a single string, or a  list of strings.
+### 2. Define the list of allowed domains. You can either set this variable to a single string, or a  list of strings.
 
 ```
 $wgEmailDomain = 'example.com';  // Single Domain
