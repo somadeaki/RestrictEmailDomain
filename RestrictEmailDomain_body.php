@@ -12,10 +12,12 @@ class RestrictEmailDomainPreAuthenticationProvider extends MediaWiki\Auth\Abstra
 		global $wgEmailDomain;
 		
 		if ($wgEmailDomain) {
-			list($name, $host) = explode("@", $user->getEmail());
+			if ($user->getEmail()) {
+				list($name, $host) = explode("@", $user->getEmail());
 			
-			if ((is_array($wgEmailDomain) && in_array($host, $wgEmailDomain)) || $host == $wgEmailDomain) {
-				return StatusValue::newGood();
+				if ((is_array($wgEmailDomain) && in_array($host, $wgEmailDomain)) || $host == $wgEmailDomain) {
+					return StatusValue::newGood();
+				}
 			}
 		}
 		
